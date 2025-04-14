@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thynk | Criação de Sites</title>
+
+    <!-- External CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fs-3 text-indigo" href="#">
+                <img src="logoThynk.png" alt="Logo Thynk" width="40" height="40" class="d-inline-block align-text-top">
+                Thynk
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+
+                    <!-- Dropdown Serviços -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Serviços
+                        </a>
+                        <ul class="dropdown-menu animate-fade">
+                            <li><a class="dropdown-item" href="landing/index.html">LandingPage</a></li>
+                            <li><a class="dropdown-item" href="multipage/index.html">MultiPages</a></li>
+                            <li><a class="dropdown-item" href="ecommerce/index.html">E-Commerce</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown Sistemas -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Sistemas
+                        </a>
+                        <ul class="dropdown-menu animate-fade">
+                            <li><a class="dropdown-item" href="agendamento/index.html">ThynkBarber</a></li>
+                           <!-- <li><a class="dropdown-item" href="#delivery">Sistema de Delivery</a></li> -->
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="quemsomos/index.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trabalheconosco/index.html">Trabalhe Conosco</a></li>
+
+                    <li class="nav-item ms-3">
+                        <a href="https://wa.me/5532991145114" target="_blank"
+                            class="btn btn-outline-indigo rounded-pill px-4 py-2">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Espaço para compensar navbar fixa -->
+    <div style="height: 80px;"></div>
+
+    <!-- Como surgiu a Thynk? -->
+    <section class="container py-5 d-flex flex-column flex-md-row align-items-center gap-5">
+        <div class="col-md-6 order-2 order-md-1">
+            <h2 class="mb-3">Como surgiu a Thynk?</h2>
+            <p class="lead text-muted">
+                A Thynk nasceu com a missão de transformar a presença digital de pequenos e médios negócios.
+                Nosso objetivo é criar experiências online acessíveis, modernas e impactantes.
+            </p>
+        </div>
+
+        <div class="col-md-6 order-1 order-md-2">
+            <img src="logoThynk.png" alt="Equipe Thynk" class="img-fluid custom-radius">
+        </div>
+    </section>
+
+    <!-- Nossos Diferenciais -->
+    <section class="container py-5">
+        <div class="row text-center mb-4">
+            <h2>Nossos Diferenciais</h2>
+            <p class="text-muted">O que torna a Thynk especial para o seu negócio</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Card Agilidade -->
+            <div class="col-md-4">
+                <div class="card card-diferencial border-0 shadow-sm p-4 text-center h-100">
+                    <div class="icon-wrapper bg-blue">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h5 class="mt-4">Agilidade</h5>
+                    <p class="text-muted">Entregamos sites rápidos, otimizados e prontos para colocar sua marca no ar em
+                        tempo recorde.</p>
+                </div>
+            </div>
+
+            <!-- Card Criatividade -->
+            <div class="col-md-4">
+                <div class="card card-diferencial border-0 shadow-sm p-4 text-center h-100">
+                    <div class="icon-wrapper bg-yellow">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h5 class="mt-4">Criatividade</h5>
+                    <p class="text-muted">Soluções visuais modernas e criativas que fazem seu negócio se destacar na
+                        web.</p>
+                </div>
+            </div>
+
+            <!-- Card Sustentabilidade -->
+            <div class="col-md-4">
+                <div class="card card-diferencial border-0 shadow-sm p-4 text-center h-100">
+                    <div class="icon-wrapper bg-green">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h5 class="mt-4">Sustentabilidade</h5>
+                    <p class="text-muted">Utilizamos tecnologias otimizadas e acessíveis, focadas na durabilidade e
+                        evolução digital do seu negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+          <h5 class="text-muted mb-4">Nossos Parceiros</h5>
+      
+          <div class="carousel-infinite-wrapper">
+            <div class="carousel-track" id="logoTrack">
+              <!-- 10 logos duplicadas para efeito infinito -->
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+      
+              <!-- Duplicação para looping -->
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+              <img src="logoThynk.png" alt="Logo" class="logo-carousel">
+            </div>
+          </div>
+        </div>
+      </section>      
+
+    <!-- Seção 3 - O que fazemos -->
+    <section class="container py-5">
+        <div class="text-center mb-5">
+            <h2>O que fazemos?</h2>
+            <p class="text-muted">Nossos principais serviços digitais</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Card: Web Design -->
+            <div class="col-md-4">
+                <div class="servico-card p-4 shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box bg-blue-transparent">
+                            <i class="fa-solid fa-paint-brush"></i>
+                        </div>
+                        <h5 class="ms-3 mb-0">Web Design</h5>
+                    </div>
+                    <p class="text-muted">Criação de sites modernos, responsivos e com foco em conversão para seu
+                        negócio.</p>
+                    <a href="https://wa.me/5532991145114" target="_blank" class="btn btn-outline-primary w-100">Entrar
+                        em Contato</a>
+                </div>
+            </div>
+
+            <!-- Card: E-Commerces -->
+            <div class="col-md-4">
+                <div class="servico-card p-4 shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box bg-blue-transparent">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <h5 class="ms-3 mb-0">E-Commerces</h5>
+                    </div>
+                    <p class="text-muted">Lojas virtuais completas, com integração de pagamento, estoque e frete.</p>
+                    <a href="https://wa.me/5532991145114" target="_blank" class="btn btn-outline-primary w-100">Entrar
+                        em Contato</a>
+                </div>
+            </div>
+
+            <!-- Card: Aplicativos -->
+            <div class="col-md-4">
+                <div class="servico-card p-4 shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box bg-blue-transparent">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h5 class="ms-3 mb-0">Aplicativos</h5>
+                    </div>
+                    <p class="text-muted">Aplicativos para Android e iOS sob medida para seu negócio ou startup.</p>
+                    <a href="https://wa.me/5532991145114" target="_blank" class="btn btn-outline-primary w-100">Entrar
+                        em Contato</a>
+                </div>
+            </div>
+
+            <!-- Card: SEOs -->
+            <div class="col-md-4">
+                <div class="servico-card p-4 shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box bg-blue-transparent">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h5 class="ms-3 mb-0">SEOs</h5>
+                    </div>
+                    <p class="text-muted">Otimização para mecanismos de busca. Faça seu site aparecer no Google com
+                        autoridade.</p>
+                    <a href="https://wa.me/5532991145114" target="_blank" class="btn btn-outline-primary w-100">Entrar
+                        em Contato</a>
+                </div>
+            </div>
+
+            <!-- Card: EADs -->
+            <div class="col-md-4">
+                <div class="servico-card p-4 shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box bg-blue-transparent">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h5 class="ms-3 mb-0">EADs</h5>
+                    </div>
+                    <p class="text-muted">Plataformas de ensino à distância com controle de aulas, alunos e
+                        certificados.</p>
+                    <a href="https://wa.me/5532991145114" target="_blank" class="btn btn-outline-primary w-100">Entrar
+                        em Contato</a>
+                </div>
+            </div>
+
+            <!-- Card: Hospedagens -->
+            <div class="col-md-4">
+                <div class="servico-card p-4 shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box bg-blue-transparent">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h5 class="ms-3 mb-0">Hospedagens</h5>
+                    </div>
+                    <p class="text-muted">Servidores rápidos e seguros com suporte especializado para manter seu site no
+                        ar 24h.</p>
+                    <a href="https://wa.me/5532991145114" target="_blank" class="btn btn-outline-primary w-100">Entrar
+                        em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão WhatsApp -->
+    <button id="whatsappButton" class="whatsapp-btn">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Chat Popup -->
+    <div id="chatPopup" class="chat-popup">
+        <div class="chat-header">
+            <img src="logoThynk.png" alt="Time Thynk" class="chat-avatar">
+            <div class="chat-name">Thynk</div>
+        </div>
+        <div class="chat-body">
+            <div id="typingMessage" class="chat-message bot"></div>
+            <div id="chatOptions" class="chat-buttons" style="display: none;">
+                <button onclick="redirectToWhatsApp('ideia')">Gostaria de criar uma ideia</button>
+                <button onclick="redirectToWhatsApp('saber-mais')">Gostaria de saber mais sobre</button>
+                <button onclick="redirectToWhatsApp('outros')">Outros</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-line"></div>
+        <div class="footer-text">
+            <p>Desenvolvido por <span>Thynk</span> | &copy; 2025</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const carouselElement = document.querySelector('#logoCarousel');
+        const carousel = new bootstrap.Carousel(carouselElement, {
+            interval: 2000,
+            ride: 'carousel',
+            pause: false,
+            wrap: true
+        });
+    </script>
+
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+/* Estilo clean e moderno */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link,
+.navbar-brand {
+    font-weight: 500;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    color: #0044ff;
+    /* Indigo suave */
+}
+
+/* Dropdown animação */
+.dropdown-menu.animate-fade {
+    animation: fadeIn 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Botão de Contato */
+.btn-outline-indigo {
+    border: 2px solid #0044ff;
+    color: #0044ff;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-outline-indigo:hover {
+    background-color: #0044ff;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bordas assimétricas na imagem */
+.custom-radius {
+    border-radius: 290px 190px 129px 200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.custom-radius:hover {
+    transform: scale(1.02);
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    max-width: 90%;
+    padding: 16px;
+    z-index: 999;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.chat-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+.chat-body {
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.chat-message.bot {
+    font-size: 15px;
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 10px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.chat-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.chat-buttons button {
+    background-color: #0044ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-buttons button:hover {
+    background-color: #0044ff;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0044ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    background-color: #0044ff;
+}
+
+
+/* Cards de Diferenciais */
+.card-diferencial {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.card-diferencial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.icon-wrapper i {
+    opacity: 1;
+    color: inherit;
+}
+
+/* Cores personalizadas */
+.bg-blue {
+    background-color: #0044ffc9;
+    color: #ffffff;
+}
+
+.bg-yellow {
+    background-color: #facc15c9;
+    color: #ffffff;
+}
+
+.bg-green {
+    background-color: #00ff5ec9;
+    color: #ffffff;
+}
+
+/* Footer ajustado */
+.footer {
+    background-color: #ffffff;
+    /* Fundo branco */
+    font-size: 155px;
+    padding: 2px 0;
+    /* Espaçamento em cima e embaixo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave acima */
+}
+
+.footer .footer-text {
+    text-align: center;
+    margin-top: -20px;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    /* Diminui o tamanho da fonte */
+}
+
+.footer .footer-text span {
+    color: #0044ff;
+    /* Azul para a palavra 'Thynk' */
+}
+
+.footer .footer-line {
+    height: 1px;
+    background-color: #ffffff;
+    /* Linha branca */
+    margin: 20px auto;
+    width: 50%;
+    /* Diminui a largura da linha */
+}
+
+.footer .footer-copy {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+.servico-card {
+    border-radius: 16px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servico-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.bg-blue-transparent {
+    background-color: #0044ffc9;
+    /* azul transparente */
+}
+
+.carousel-infinite-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 200px;
+    animation: scroll 8s linear infinite;
+}
+
+.logo-carousel {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-carousel:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+/* Radius e Imagem */
+.custom-radius {
+    border-radius: 290px 190px 129px 200px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.custom-radius:hover {
+    transform: scale(1.02);
+}
+
+/* Cards */
+.card-diferencial {
+    border-radius: 16px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-diferencial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #fff;
+    opacity: 0.9;
+    margin: auto;
+}
+
+.bg-blue {
+    background-color: #3b82f6;
+}
+
+.bg-yellow {
+    background-color: #facc15;
+}
+
+.bg-green {
+    background-color: #00ff5e;
+}
+
+/* Footer */
+.footer {
+    font-size: 14px;
+}
+.shadow-top {
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+form input,
+form textarea {
+    border-radius: 12px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form button {
+    border-radius: 12px;
+    background-color: #0044ff;
+    border: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+form button:hover {
+    background-color: #0044ff;
+}
+
+
+.vaga-info i {
+    color: #6c757d !important; /* Cinza Bootstrap */
+  }
+  
