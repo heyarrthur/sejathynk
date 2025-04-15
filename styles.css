@@ -48,17 +48,6 @@
     }
 }
 
-/* Bordas assimétricas na imagem */
-.custom-radius {
-    border-radius: 290px 190px 129px 200px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.custom-radius:hover {
-    transform: scale(1.02);
-}
-
 .chat-popup {
     display: none;
     position: fixed;
@@ -302,19 +291,6 @@
     }
 }
 
-
-
-
-/* Radius e Imagem */
-.custom-radius {
-    border-radius: 290px 190px 129px 200px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.custom-radius:hover {
-    transform: scale(1.02);
-}
 
 /* Cards */
 .card-diferencial {
